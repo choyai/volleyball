@@ -1,0 +1,9 @@
+﻿{
+    "name": "VolleyballTests",
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}
