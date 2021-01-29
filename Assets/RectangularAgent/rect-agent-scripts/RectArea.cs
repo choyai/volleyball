@@ -203,7 +203,7 @@ public class RectArea : MonoBehaviour
         {
             yellowScore++;
         }
-        Debug.Log( "GoalTouched: " + scoredTeam.ToString() );
+        // Debug.Log( "GoalTouched: " + scoredTeam.ToString() );
         GiveReward(scoredTeam);
     }
 
@@ -219,7 +219,7 @@ public class RectArea : MonoBehaviour
 
     public void OutOfBounds( RectAgent agent )
     {
-        Debug.Log( "OOBs by " + agent.gameObject.name );
+        // Debug.Log( "OOBs by " + agent.gameObject.name );
         OutOfBounds( agent.team );
     }
 

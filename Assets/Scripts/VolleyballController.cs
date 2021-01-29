@@ -2,36 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VolleyballController: MonoBehaviour
+namespace Volleyball
 {
-    // Uncomment these when implementing functionality
-    // [HideInInspector]
-    // public VolleyballArea area;
-    // public string yellowGoalTag;
-    // public string blueGoalTag;
-
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-        
-    // }
-
-    // // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
-
-    void OnCollisionEnter(Collision col)
+    public class VolleyballController: MonoBehaviour
     {
-        string collidedTag = GetCollidedTag(col);
+        // [HideInInspector]
+        public VolleyballArea area;
+
+        // update function makes sure balls con't stray too far from court
+        void Update()
+        {
+            // Check the position for out of bounds
+            if ( Mathf.Abs(transform.localPosition.x) > 15 ||
+                Mathf.Abs(transform.localPosition.z) > 20 )
+            {
+                area.OutOfBounds();
+            }
+        }
+
+        // technically OnCollisionEnter should handle most collisions
+        // add more collision methods if this fails
+        void OnCollisionEnter(Collision col)
+        {
+            // pass the gameObject since it might be an agent
+            area.BallCollision_cb(col.gameObject);
+        }
+
+
     }
-
-    // Gets the tag of the collided object to be passed onto rectArea for scoring
-    string GetCollidedTag(Collision col)
-    {
-        return col.gameObject.tag;
-    }
-
-
 }

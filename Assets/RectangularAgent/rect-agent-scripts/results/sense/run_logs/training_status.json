@@ -1,0 +1,47 @@
+{
+    "RectangularAgent": {
+        "checkpoints": [
+            {
+                "steps": 20999960,
+                "file_path": "results\\sense\\RectangularAgent\\RectangularAgent-20999960.nn",
+                "reward": -0.14694919066926454,
+                "creation_time": 1608648150.9730606
+            },
+            {
+                "steps": 21499958,
+                "file_path": "results\\sense\\RectangularAgent\\RectangularAgent-21499958.nn",
+                "reward": -0.06136458665132523,
+                "creation_time": 1608648563.6656241
+            },
+            {
+                "steps": 21999982,
+                "file_path": "results\\sense\\RectangularAgent\\RectangularAgent-21999982.nn",
+                "reward": -0.151465000270249,
+                "creation_time": 1608648954.955148
+            },
+            {
+                "steps": 22499993,
+                "file_path": "results\\sense\\RectangularAgent\\RectangularAgent-22499993.nn",
+                "reward": 0.030865756024741453,
+                "creation_time": 1608649352.539465
+            },
+            {
+                "steps": 22620170,
+                "file_path": "results\\sense\\RectangularAgent\\RectangularAgent-22620170.nn",
+                "reward": -0.36382629830613095,
+                "creation_time": 1608649455.5347426
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 22620170,
+            "file_path": "results\\sense\\RectangularAgent.nn",
+            "reward": -0.36382629830613095,
+            "creation_time": 1608649455.5347426
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.19.0",
+        "tensorflow_version": "2.3.0"
+    }
+}

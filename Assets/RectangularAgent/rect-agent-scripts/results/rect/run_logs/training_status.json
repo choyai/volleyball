@@ -1,0 +1,48 @@
+{
+    "RectangularAgent": {
+        "checkpoints": [
+            {
+                "steps": 25499998,
+                "file_path": "results\\rect\\RectangularAgent\\RectangularAgent-25499998.onnx",
+                "reward": -0.48203249089985994,
+                "creation_time": 1611807960.827974
+            },
+            {
+                "steps": 25999992,
+                "file_path": "results\\rect\\RectangularAgent\\RectangularAgent-25999992.onnx",
+                "reward": -0.439118445467927,
+                "creation_time": 1611808301.5752022
+            },
+            {
+                "steps": 26499999,
+                "file_path": "results\\rect\\RectangularAgent\\RectangularAgent-26499999.onnx",
+                "reward": 0.9144262557937985,
+                "creation_time": 1611808644.9567373
+            },
+            {
+                "steps": 26999998,
+                "file_path": "results\\rect\\RectangularAgent\\RectangularAgent-26999998.onnx",
+                "reward": 0.959556265294371,
+                "creation_time": 1611808993.9391031
+            },
+            {
+                "steps": 27107708,
+                "file_path": "results\\rect\\RectangularAgent\\RectangularAgent-27107708.onnx",
+                "reward": -0.48747302945774634,
+                "creation_time": 1611809070.5530226
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 27107708,
+            "file_path": "results\\rect\\RectangularAgent.onnx",
+            "reward": -0.48747302945774634,
+            "creation_time": 1611809070.5530226
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.23.0",
+        "torch_version": "1.7.0+cu110",
+        "tensorflow_version": -1
+    }
+}

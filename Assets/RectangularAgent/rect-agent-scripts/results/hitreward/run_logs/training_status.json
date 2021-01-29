@@ -1,0 +1,47 @@
+{
+    "RectangularAgent": {
+        "checkpoints": [
+            {
+                "steps": 18999930,
+                "file_path": "results\\hitreward\\RectangularAgent\\RectangularAgent-18999930.nn",
+                "reward": 0.061596657643771036,
+                "creation_time": 1609229939.1741683
+            },
+            {
+                "steps": 19499950,
+                "file_path": "results\\hitreward\\RectangularAgent\\RectangularAgent-19499950.nn",
+                "reward": 0.11702342331409454,
+                "creation_time": 1609230233.1621535
+            },
+            {
+                "steps": 19999936,
+                "file_path": "results\\hitreward\\RectangularAgent\\RectangularAgent-19999936.nn",
+                "reward": -0.01814330751831467,
+                "creation_time": 1609230515.801944
+            },
+            {
+                "steps": 20499904,
+                "file_path": "results\\hitreward\\RectangularAgent\\RectangularAgent-20499904.nn",
+                "reward": 0.14980262976426345,
+                "creation_time": 1609230804.25906
+            },
+            {
+                "steps": 20997638,
+                "file_path": "results\\hitreward\\RectangularAgent\\RectangularAgent-20997638.nn",
+                "reward": 0.16452756524085999,
+                "creation_time": 1609231098.544114
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 20997638,
+            "file_path": "results\\hitreward\\RectangularAgent.nn",
+            "reward": 0.16452756524085999,
+            "creation_time": 1609231098.544114
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.19.0",
+        "tensorflow_version": "2.3.0"
+    }
+}

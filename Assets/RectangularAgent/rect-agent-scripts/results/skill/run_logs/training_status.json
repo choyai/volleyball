@@ -1,0 +1,41 @@
+{
+    "RectangularAgent": {
+        "checkpoints": [
+            {
+                "steps": 2499968,
+                "file_path": "results\\skill\\RectangularAgent\\RectangularAgent-2499968.nn",
+                "reward": -0.026367186059008587,
+                "creation_time": 1608435157.204149
+            },
+            {
+                "steps": 2999985,
+                "file_path": "results\\skill\\RectangularAgent\\RectangularAgent-2999985.nn",
+                "reward": -0.18442466813464498,
+                "creation_time": 1608435570.26881
+            },
+            {
+                "steps": 3499992,
+                "file_path": "results\\skill\\RectangularAgent\\RectangularAgent-3499992.nn",
+                "reward": -0.07753853550573596,
+                "creation_time": 1608436084.03823
+            },
+            {
+                "steps": 3999991,
+                "file_path": "results\\skill\\RectangularAgent\\RectangularAgent-3999991.nn",
+                "reward": -0.04242019989213891,
+                "creation_time": 1608436838.087665
+            },
+            {
+                "steps": 4499989,
+                "file_path": "results\\skill\\RectangularAgent\\RectangularAgent-4499989.nn",
+                "reward": -0.40449024064868105,
+                "creation_time": 1608437644.0190313
+            }
+        ]
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.19.0",
+        "tensorflow_version": "2.3.0"
+    }
+}

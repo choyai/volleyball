@@ -327,7 +327,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 11400000, guid: c4c615546db75c44d8fe09d67fe52f0b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: ec5fceef30e42e5499180507216ee1b9, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: RectangularAgent
