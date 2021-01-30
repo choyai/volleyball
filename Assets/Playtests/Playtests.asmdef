@@ -1,12 +1,9 @@
-{
-    "name": "VolleyballTests",
+﻿{
+    "name": "Playtests",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Packages"
-    ],
-    "includePlatforms": [
-        "Editor"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
