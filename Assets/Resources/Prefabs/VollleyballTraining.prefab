@@ -2294,6 +2294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6285327770540025349}
   - component: {fileID: 6285327770540025348}
+  - component: {fileID: 9041070564610324273}
   m_Layer: 0
   m_Name: VollleyballTraining
   m_TagString: TrainingArea
@@ -2339,7 +2340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 097dccbcee81165478122f8b461057c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
+  ball: {fileID: 5797576173382784143}
   phase: 0
   ballRb: {fileID: 0}
   playerStates: []
@@ -2356,6 +2357,22 @@ MonoBehaviour:
   yellowScore: 0
   motionTimer: 0
   timerRunning: 0
+--- !u!114 &9041070564610324273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6285327770540025350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab8068fcd21f964eaf90d6e0824849d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowMaterial: {fileID: 2100000, guid: 27c24faf5e6127040874b76eef226cad, type: 2}
+  blueMaterial: {fileID: 2100000, guid: c9f24557fb89b904d9a614c371ddbeaf, type: 2}
+  randomizePlayersTeamForTraining: 1
+  agentRunSpeed: 1
 --- !u!1 &6285327770986354495
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,6 +3325,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 976611422170057625, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
         type: 3}
+      propertyPath: area
+      value: 
+      objectReference: {fileID: 6285327770540025348}
+    - target: {fileID: 976611422170057625, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
+        type: 3}
       propertyPath: enemyAgent1
       value: 
       objectReference: {fileID: 517607813557942001}
@@ -3404,6 +3426,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2469340191256627715, guid: 98f68757fa02baf4c918d31598135e9d,
         type: 3}
+      propertyPath: area
+      value: 
+      objectReference: {fileID: 6285327770540025348}
+    - target: {fileID: 2469340191256627715, guid: 98f68757fa02baf4c918d31598135e9d,
+        type: 3}
       propertyPath: enemyAgent1
       value: 
       objectReference: {fileID: 1542856506573073390}
@@ -3498,6 +3525,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6285327770540025349}
     m_Modifications:
+    - target: {fileID: 6063411358151952665, guid: b7c6d7e4ecdfe6a49baf4887bcc713f6,
+        type: 3}
+      propertyPath: area
+      value: 
+      objectReference: {fileID: 6285327770540025348}
     - target: {fileID: 7639758854764145182, guid: b7c6d7e4ecdfe6a49baf4887bcc713f6,
         type: 3}
       propertyPath: m_Name
@@ -3560,6 +3592,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7c6d7e4ecdfe6a49baf4887bcc713f6, type: 3}
+--- !u!1 &5797576173382784143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7639758854764145182, guid: b7c6d7e4ecdfe6a49baf4887bcc713f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4211077735321403025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5797576173382784142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7639758854764145183, guid: b7c6d7e4ecdfe6a49baf4887bcc713f6,
@@ -3573,6 +3611,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6285327770540025349}
     m_Modifications:
+    - target: {fileID: 2469340191256627715, guid: 98f68757fa02baf4c918d31598135e9d,
+        type: 3}
+      propertyPath: area
+      value: 
+      objectReference: {fileID: 6285327770540025348}
     - target: {fileID: 2469340191256627715, guid: 98f68757fa02baf4c918d31598135e9d,
         type: 3}
       propertyPath: enemyAgent1
@@ -3671,6 +3714,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 976611422170057625, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
         type: 3}
+      propertyPath: area
+      value: 
+      objectReference: {fileID: 6285327770540025348}
+    - target: {fileID: 976611422170057625, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
+        type: 3}
       propertyPath: enemyAgent1
       value: 
       objectReference: {fileID: 7487552572595567117}
@@ -3746,15 +3794,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f01b0def4bfcf604aaa9a6ed0cf568c5, type: 3}
---- !u!4 &5711873924130641899 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2317639724253540116, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
-    type: 3}
-  m_PrefabInstance: {fileID: 8029159605603465471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6783919285993442995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3551119896243304012, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8029159605603465471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5711873924130641899 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2317639724253540116, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
     type: 3}
   m_PrefabInstance: {fileID: 8029159605603465471}
   m_PrefabAsset: {fileID: 0}

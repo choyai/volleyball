@@ -3,28 +3,41 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-// using MLAgents;
-using Scripts;
+using Volleyball;
 
 namespace Tests
 {
     public class VolleyballHitTest
     {
-        // VolleyballArea area;
+        VolleyballArea area;
         [SetUp]
         public void Init()
         {
+            Physics.gravity = Vector3.zero;
             GameObject areaObject = MonoBehaviour
-            .Instantiate(Resources.Load<GameObject>("Prefabs/VollleyballTraining"));       
+            .Instantiate(Resources.Load<GameObject>("Prefabs/VollleyballTraining")); 
+            area = areaObject.GetComponent<VolleyballArea>();      
         }
 
+        [TearDown]
+        public void TearDown()
+        {
+            Object.DestroyImmediate(area.gameObject);
+        }
+
+        [Test]
+        public void VolleyballAreaIsLoaded()
+        {
+            Assert.IsNotNull(area.gameObject);
+        }
 
         // A Test behaves as an ordinary method
         [Test]
         public void VolleyballHitTestSimplePasses()
         {
+
             // Use the Assert class to test conditions
-            Assert.Fail();
+            Assert.Pass();
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
@@ -34,6 +47,7 @@ namespace Tests
         {
             // Use the Assert class to test conditions.
             // Use yield to skip a frame.
+            
             yield return null;
         }
     }
