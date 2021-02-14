@@ -17,6 +17,10 @@ namespace Volleyball
             Yellow = 1
         }
 
+        public VolleyballSkills skills;
+
+        public bool playerControlled;
+
         public VolleyballTeam team;
         float m_KickPower;
         int m_PlayerIndex;
@@ -250,39 +254,76 @@ namespace Volleyball
 
         public override void Heuristic(in ActionBuffers actionsOut)
         {
+
             var discreteActions = actionsOut.DiscreteActions;
             discreteActions.Clear();
-            //forward
-            if (Input.GetKey(KeyCode.A))
+            // Player controlled
+            if( playerControlled )
             {
-                discreteActions[0] = 1;
+                //forward
+                if (Input.GetKey(KeyCode.A))
+                {
+                    discreteActions[0] = 1;
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    discreteActions[0] = 2;
+                }
+            
+                //rotate
+                if (Input.GetKey(KeyCode.LeftArrow))
+                {
+                    discreteActions[2] = 1;
+                }
+                if (Input.GetKey(KeyCode.RightArrow))
+                {
+                    discreteActions[2] = 2;
+                }
+                //right
+                if (Input.GetKey(KeyCode.W))
+                {
+                    discreteActions[1] = 1;
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    discreteActions[1] = 2;
+                }
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    discreteActions[3] = 2;
+                }
             }
-            if (Input.GetKey(KeyCode.D))
+            else
             {
-                discreteActions[0] = 2;
-            }
-        
-            //rotate
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                discreteActions[2] = 1;
-            }
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                discreteActions[2] = 2;
-            }
-            //right
-            if (Input.GetKey(KeyCode.W))
-            {
-                discreteActions[1] = 1;
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                discreteActions[1] = 2;
-            }
-            if (Input.GetKey(KeyCode.Space))
-            {
-                discreteActions[3] = 2;
+             // heuristic for testing.
+             // chases ball and hits it when it gets close
+             Vector3 ballDis = this.transform.InverseTransformPoint( area.ball.transform.position );
+             if( Mathf.Abs( ballDis.magnitude ) < 2f )
+             {
+                 discreteActions[3] = 2;
+             }
+
+             // z axis is front
+             // get z component of ball displacement
+             if( ballDis.z > 0 )
+             {
+                 // forward
+                 discreteActions[0] = 1;
+             } 
+             else
+             {
+                 discreteActions[0] = 2;
+             }
+
+             if( ballDis.x > 0 )
+             {
+                 discreteActions[1] = 1;
+             }
+             else
+             {
+                 discreteActions[1] = 2;
+             }
+
             }
         }
         /// <summary>

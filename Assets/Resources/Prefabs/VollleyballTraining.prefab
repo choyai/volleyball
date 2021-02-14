@@ -3732,6 +3732,11 @@ PrefabInstance:
       propertyPath: friendlyAgent
       value: 
       objectReference: {fileID: 1542856506573073390}
+    - target: {fileID: 976611422170057625, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
+        type: 3}
+      propertyPath: playerControlled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2317639724253540116, guid: f01b0def4bfcf604aaa9a6ed0cf568c5,
         type: 3}
       propertyPath: m_RootOrder

@@ -1,10 +1,12 @@
-﻿{
+{
     "name": "Playtests",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "Packages"
+        "Packages",
+        "Unity.ML-Agents"
     ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,

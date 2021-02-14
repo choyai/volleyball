@@ -9,7 +9,7 @@ public class TrainingCamera : MonoBehaviour
 {
     public GameObject[] areas;
     int idx = 0;
-    Vector3 offset = new Vector3( 20, 20, -15 );
+    Vector3 offset = new Vector3( 10, 20, -30 );
 
     void Awake()
     {

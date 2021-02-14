@@ -205,7 +205,7 @@ namespace Volleyball
             {
                 yellowScore++;
             }
-            Debug.Log( "Scored: " + scoredTeam.ToString() );
+            // Debug.Log( "Scored: " + scoredTeam.ToString() );
             GiveReward(scoredTeam);
         }
 
@@ -221,7 +221,7 @@ namespace Volleyball
 
         public void OutOfBounds( VolleyballAgent agent )
         {
-            Debug.Log( "OOBs by " + agent.gameObject.name );
+            // Debug.Log( "OOBs by " + agent.gameObject.name );
             OutOfBounds( agent.team );
         }
 
@@ -348,21 +348,21 @@ namespace Volleyball
             // currently it is random who gets to serve the code below doesn't work.
             int turn = randall.Next(4);
             // Debug.Log(turn);
-            // for( int count = 0; count < 4; count++ )
-            // {
-            //     var ps = playerStates[count];
-            //     if( count == turn )
-            //     {
-            //         ball.transform.SetParent(ps.agentScript.gameObject.transform);
-            //         ball.transform.localPosition = new Vector3(1f, 0.0f, 0f);
-            //         ps.agentScript.isServing = true;
-            //     }
-            //     else
-            //     {
-            //         ps.isServing = false;
-            //         count++;
-            //     }
-            // }
+            for( int count = 0; count < playerStates.Count; count++ )
+            {
+                var ps = playerStates[count];
+                if( count == turn )
+                {
+                    ball.transform.SetParent(ps.agentScript.gameObject.transform);
+                    ball.transform.localPosition = new Vector3(1f, 0.0f, 0f);
+                    ps.agentScript.isServing = true;
+                }
+                else
+                {
+                    ps.isServing = false;
+                    count++;
+                }
+            }
             foreach (var ps in playerStates)
             {
                 if(ps.agentScript.team == prevScoredTeam)
@@ -507,13 +507,13 @@ namespace Volleyball
         }
 
         //  utility
-        int getAgentID( VolleyballAgent agent )
+        public int getAgentID( VolleyballAgent agent )
         {
             VolleyballState ps = playerStates.Find( p => p.agentScript == agent );
             return ps.playerIndex;
         }
 
-        VolleyballAgent getAgentByID( int id )
+        public VolleyballAgent getAgentByID( int id )
         {
             VolleyballState ps =  playerStates.Find( p => p.playerIndex == id );
             return ps.agentScript;
