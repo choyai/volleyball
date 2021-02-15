@@ -1,0 +1,36 @@
+{
+    "VolleyballAgent": {
+        "checkpoints": [
+            {
+                "steps": 499973,
+                "file_path": "results\\volley1\\VolleyballAgent\\VolleyballAgent-499973.onnx",
+                "reward": 0.06905027566081806,
+                "creation_time": 1613029892.8193514
+            },
+            {
+                "steps": 999982,
+                "file_path": "results\\volley1\\VolleyballAgent\\VolleyballAgent-999982.onnx",
+                "reward": 0.10905011146586405,
+                "creation_time": 1613030611.6954565
+            },
+            {
+                "steps": 1059972,
+                "file_path": "results\\volley1\\VolleyballAgent\\VolleyballAgent-1059972.onnx",
+                "reward": -0.0861091620555376,
+                "creation_time": 1613030717.9013052
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1059972,
+            "file_path": "results\\volley1\\VolleyballAgent.onnx",
+            "reward": -0.0861091620555376,
+            "creation_time": 1613030717.9013052
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.23.0",
+        "torch_version": "1.7.0+cu110",
+        "tensorflow_version": -1
+    }
+}

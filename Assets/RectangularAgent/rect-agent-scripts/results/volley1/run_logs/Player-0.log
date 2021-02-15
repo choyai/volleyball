@@ -1,0 +1,49 @@
+Mono path[0] = 'C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Managed'
+Mono config path = 'C:/Users/choyai/Documents/GitHub/thesis_runs/MonoBleedingEdge/etc'
+PlayerConnection initialized from C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55168
+Multi-casting "[IP] 192.168.1.36 [Port] 55168 [Flags] 2 [Guid] 3821939086 [EditorId] 3135409475 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-E64B99M) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] volleyball" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55168]
+PlayerConnection already initialized - listening to [0.0.0.0:55168]
+Initialize engine version: 2019.4.18f1 (3310a4d4f880)
+[Subsystems] Discovering subsystems at path C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
+    Vendor:   
+    VRAM:     8031 MB
+    Driver:   27.21.14.5655
+Begin MonoManager ReloadAssembly
+- Completed reload, in  1.016 seconds
+D3D11 device created for Microsoft Media Foundation video decoding.
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.854400 ms
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/choyai/Documents/GitHub/thesis_runs/volleyball_Data/Mono/libSystem.dylib
+Setting up 6 worker threads for Enlighten.
+  Thread -> id: 61c8 -> priority: 1 
+  Thread -> id: 2614 -> priority: 1 
+  Thread -> id: 6004 -> priority: 1 
+  Thread -> id: 5e60 -> priority: 1 
+  Thread -> id: 5a74 -> priority: 1 
+  Thread -> id: 5264 -> priority: 1 
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1613030722028,"processId":25460,"allocatedMemory":4796,"memoryLabels":[{"Permanent":40},{"NewDelete":472},{"Thread":72},{"Manager":1968},{"Physics":32},{"Serialization":40},{"String":404},{"PoolAlloc":112},{"GI":296},{"VR":2024},{"Subsystems":-664}]}
