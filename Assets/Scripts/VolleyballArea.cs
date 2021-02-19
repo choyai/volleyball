@@ -299,7 +299,7 @@ namespace Volleyball
 
         void playerTouchedBall( VolleyballAgent agent )
         {
-            if( agent.recentlyHit || recentlyServed )
+            if( phase != GamePhase.Start && (agent.recentlyHit || recentlyServed) )
             {
                 return;
             }
@@ -310,7 +310,6 @@ namespace Volleyball
                 return;
             }
             prevTouchedAgentId = getAgentID(agent);
-
             // count the team touches
             if( prevTouchedTeam == agent.team )
             {
@@ -452,8 +451,8 @@ namespace Volleyball
                 ball.transform.SetParent( this.transform, true );
                 playerTurn = ( playerTurn == 0) ? 1 : 0;
                 agent.isServing = false;
-                this.phase = GamePhase.Play;
                 playerTouchedBall( agent );
+                this.phase = GamePhase.Play;
                 StartCoroutine( serviceCooldownTimer() );
             }
         }

@@ -148,10 +148,14 @@ namespace Tests
             }
             Assert.True( serving.Count != 0);
             // call the service function
-            Debug.Log( serving[0].gameObject.name );
+            // Debug.Log( serving[0].gameObject.name );
             area.Service( serving[0] );
 
-            yield return new WaitForSeconds( 0.2f );
+            yield return new WaitForSeconds( 0.1f );
+            Debug.Log( serving.Count.ToString() );
+            Debug.Log( serving[0].gameObject.name );
+            Debug.Log( area.getAgentByID(area.prevTouchedAgentId) );
+            yield return new WaitForSeconds( 1f );
             Assert.True( area.getAgentID(serving[0]) == area.prevTouchedAgentId );
         }
     }
