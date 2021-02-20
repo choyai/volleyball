@@ -305,12 +305,12 @@ namespace Volleyball
                 return;
             }
             //  foul ball
+            prevTouchedAgentId = getAgentID(agent);
             if( getAgentID(agent) == prevTouchedAgentId )
             {
                 OutOfBounds( agent.team);
                 return;
             }
-            prevTouchedAgentId = getAgentID(agent);
             // count the team touches
             if( prevTouchedTeam == agent.team )
             {
