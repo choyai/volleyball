@@ -130,7 +130,7 @@ namespace Volleyball
             // First team to serve is randomly selected
             prevScoredTeam = (VolleyballAgent.VolleyballTeam) rndIndex;
             sameTeamBallTouchedCount = 0;
-            prevTouchedTeam = prevScoredTeam;
+            prevTouchedTeam = prevScoredTeam
             bluePlayerTurn = 0;
             yellowPlayerTurn = 0;
             blueScore = 0;
@@ -159,6 +159,7 @@ namespace Volleyball
                         ps.agentScript.isServing = true;
                         playerTurn = (playerTurn==0) ? 1 : 0;
                         ps.playerIndex = 0;
+                        prevTouchedAgentId = getAgentID(agent);
                     }
                     else
                     {
