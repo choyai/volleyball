@@ -130,7 +130,7 @@ namespace Volleyball
             // First team to serve is randomly selected
             prevScoredTeam = (VolleyballAgent.VolleyballTeam) rndIndex;
             sameTeamBallTouchedCount = 0;
-            prevTouchedTeam = prevScoredTeam
+            prevTouchedTeam = prevScoredTeam;
             bluePlayerTurn = 0;
             yellowPlayerTurn = 0;
             blueScore = 0;
