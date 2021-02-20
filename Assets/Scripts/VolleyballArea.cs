@@ -159,7 +159,7 @@ namespace Volleyball
                         ps.agentScript.isServing = true;
                         playerTurn = (playerTurn==0) ? 1 : 0;
                         ps.playerIndex = 0;
-                        prevTouchedAgentId = getAgentID(agent);
+                        prevTouchedAgentId = getAgentID(ps.agentScript);
                     }
                     else
                     {
