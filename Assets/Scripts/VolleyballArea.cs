@@ -61,8 +61,6 @@ namespace Volleyball
         public int sameTeamBallTouchedCount = 0;
 
         public VolleyballAgent.VolleyballTeam prevTouchedTeam;
-
-
         public int prevTouchedAgentId;
 
         EnvironmentParameters m_ResetParams;
@@ -210,6 +208,7 @@ namespace Volleyball
             GiveReward(scoredTeam);
         }
 
+        // five overloads don't make a right
         public void OutOfBounds()
         {
             OutOfBounds( prevTouchedAgentId );
